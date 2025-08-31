@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- device screen 100px -> 200px => display 200  -->
+    <!-- device screen 201px -> 300px => display 300 -->
+    <!-- device screen 301px -> 400px => display 400 -->
+    <!-- device screen 401px up => display 1000 -->
+    <picture>
+      <source srcset="./img/city-street-200.jpg" media="(max-width: 200px)" />
+      <source srcset="./img/city-street-300.jpg" media="(max-width: 300px)" />
+      <source srcset="./img/city-street-500.jpg" media="(max-width: 500px)" />
+      <source srcset="./img/city-street-700.jpg" media="(max-width: 700px)" />
+      <source srcset="./img/city-street-1000.jpg" media="(max-width: 1000px)" />
+      <img src="./img/city-street.jpg" alt="city street" width="100%" />
+    </picture>
+    <!-- 
+    <picture>
+      <source srcset="https://placehold.co/1000" media="(min-width: 401px)" />
+      <source srcset="https://placehold.co/400" media="(min-width: 301px)" />
+      <source srcset="https://placehold.co/300" media="(min-width: 201px)" />
+
+      <img
+        src="https://placehold.co/200"
+        alt="default placehold"
+        width="100%"
+      />
+    </picture> -->
+    <!-- <img
+      src="https://cdn.wallpapersafari.com/28/51/i98rzu.jpg"
+      ,alt="Mountain at Sunset"
+      ,style="width:auto;height:auto"
+      ,loading="eager"
+    />
+    <img
+      src="https://images.hdqwalls.com/wallpapers/looking-far-away-4k-lb.jpg"
+      ,alt="Cool View"
+      ,style="width:auto;height:auto"
+      ,loading="lazy"
+    /> -->
+  </body>
+</html>
