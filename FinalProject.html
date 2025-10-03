@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Final Web Project</title>
+    <link rel="Castoro" href="https://fonts.googleapis.com" />
+    <link rel="Castoro" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #nav_searchbar {
+        width: 50%;
+        padding-right: 10%;
+        text-align: center;
+        margin-right: 50%;
+      }
+      nav a {
+        margin-right: 20px;
+        margin-right: 20px;
+      }
+      #read_more {
+        background-color: white;
+        color: black;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        padding: 20px;
+        margin: 20px;
+        cursor: pointer;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3); /* right and down shadow */
+      }
+      #read_more:active {
+        transform: scale(0.98); /* slight shrink on click */
+      }
+      #img_building {
+        text-align: right;
+      }
+      h2 {
+        flex-wrap: nowrap;
+        padding: 20px;
+      }
+      #my_table {
+        border: 1px solid black;
+        margin: auto;
+        width: 100%;
+        font-family: Castoro, "Times New Roman", Times, serif, sans-serif;
+      }
+      #my_title {
+        font-size: 20px;
+        width: 20px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      * {
+        font-family: Castoro, "Times New Roman", Times, serif, sans-serif;
+      }
+      .background-image {
+        background-image: url("https://www.nyhabitat.com/blog/wp-content/uploads/2014/03/queens-borough-new-york-nyc-queensboro-bridge.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh; /* ensures full background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form-container {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin: 0;
+        padding: 20px;
+        background: #fff;
+        align-items: center;
+      }
+      footer {
+        text-align: center;
+        background-color: rgb(65, 27, 27);
+        color: white;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav search bar  -->
+    <nav style="margin: auto">
+      <table>
+        <tr>
+          <td id="nav_searchbar">
+            <form action="./search" method="get">
+              <label for="text"></label>
+              <input type="text" maxlength="20" />
+            </form>
+          </td>
+          <td></td>
+          <!-- nav link  -->
+          <td id="my_font">
+            <a href="/home/">Home</a>
+            <a href="/portfolio/">Portfolio</a>
+            <a href="/ourteam/">Our Team</a>
+            <a href="/ourservice">Our Service</a>
+            <a href="/contactus/">Contact Us</a>
+          </td>
+        </tr>
+        <tr></tr>
+      </table>
+    </nav>
+    <br />
+    <!-- section with picture  -->
+    <section>
+      <table id="my_table">
+        <tr>
+          <td id="my_font">
+            <h2>
+              Welcome to My Humble <br />
+              Workspace Area 🤗
+            </h2>
+            <br />
+            <!-- button  -->
+            <button id="read_more">For More Info</button>
+          </td>
+          <!-- building image -->
+          <td id="img_building">
+            <img
+              src="https://zestrealty.com.au/wp-content/uploads/2021/08/iStock-91262130-2.jpg"
+              alt="building in Perth"
+              width="600px"
+              height="500px"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- portfolio  -->
+    <section>
+      <table id="my_table">
+        <!-- row 1 -->
+        <tr>
+          <th colspan="7" style="font-size: 20px; padding: 20px">Portfolio</th>
+          <!-- <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th> -->
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="./FP IMG/cat-in-bookstore.jpg"
+              alt="cat in bookstore"
+              width="250px"
+              height="350px"
+            />
+          </td>
+          <td>
+            <img
+              src="./FP IMG/before-coffee-gets-cold.jpg"
+              alt="before coffee gets cold"
+              width="250px"
+              height="350px"
+            />
+          </td>
+          <td>
+            <img
+              src="./FP IMG/streetlight-in-afternoon.jpg"
+              alt="streetlight in afternoon"
+              width="250px"
+              height="350px"
+            />
+          </td>
+          <td>
+            <img
+              src="./FP IMG/reading-on-a-pile-of-books.jpg"
+              alt="reading on a pile of books"
+              width="250px"
+              height="350px"
+            />
+          </td>
+        </tr>
+        <!-- row 2  -->
+        <tr>
+          <td>
+            <img
+              src="./FP IMG/boy-stand-infrontof-grey-wall.jpg"
+              alt="boy stand in front of grey wall"
+              width="250px"
+              height="350px"
+            />
+          </td>
+          <td>
+            <img
+              src="./FP IMG/study-table.jpg"
+              alt="study table"
+              width="250px"
+              height="350px"
+            />
+          </td>
+          <td>
+            <img
+              src="./FP IMG/record-store.jpg"
+              alt="record store"
+              width="250px"
+              height="350px"
+            />
+          </td>
+          <td>
+            <img
+              src="./FP IMG/read-at-cafe-store.jpg"
+              alt="read at cafe store"
+              width="250px"
+              height="350px"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <!-- our team  -->
+      <table style="border: 1px solid black">
+        <!-- 1st row  -->
+        <tr>
+          <th colspan="7" style="font-size: 20px; padding: 20px">Our Team</th>
+          <!-- <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th> -->
+        </tr>
+        <!-- 2nd row  -->
+        <tr>
+          <td style="width: 150px; height: 150px"></td>
+          <td style="border: 2px solid black">
+            <img
+              src="./FP IMG/Manager.png"
+              alt="Manager"
+              width="200px"
+              height="150px"
+            />
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+          <td style="border: 2px solid black">
+            <img
+              src="./FP IMG/Finance Admins.png"
+              alt="Finance Admins"
+              width="200px"
+              height="150px"
+            />
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+          <td style="border: 2px solid black">
+            <img
+              src="./FP IMG/Cashier.png"
+              alt="Cashier"
+              width="200px"
+              height="150px"
+            />
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+        </tr>
+        <!-- 3rd row  -->
+        <tr>
+          <td style="width: 150px; height: 150px"></td>
+          <td
+            style="
+              width: 200px;
+              height: 100px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <h3>Manager</h3>
+            <h5>Jane Davis</h5>
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+          <td
+            style="
+              width: 200px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <h3>Finance Administrator</h3>
+            <h5>Jack Tailor</h5>
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+          <td
+            style="
+              width: 200px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <h3>Receptionist</h3>
+            <h5>Joey Hugh</h5>
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+        </tr>
+        <tr style="width: 0%; height: 50px"></tr>
+      </table>
+    </section>
+    <!-- <hr style="border: 1px solid black" /> -->
+    <!-- our service  -->
+    <section>
+      <table style="border: 1px solid black">
+        <!-- 1st row  -->
+        <tr>
+          <th
+            colspan="7"
+            style="font-size: 20px; padding: 20px; margin-bottom: 20px"
+          >
+            Our Service
+          </th>
+          <!-- <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th> -->
+        </tr>
+        <!-- 2nd row  -->
+        <tr>
+          <td style="width: 150px; height: 150px"></td>
+          <td
+            style="
+              width: 250px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <!-- degital service  -->
+            <img
+              src="./FP IMG/icons8-speaker-phone-100.png"
+              alt="speaker phone"
+              width="100px"
+              height="80px"
+            />
+            <h4>Digital Service</h4>
+            <p style="display: inline; flex-wrap: wrap">
+              Lorem ipsum dolor sit elit. Molestiae, quae. Nulla totam corporis
+              quis, veritatis.
+            </p>
+          </td>
+          <td style="width: 50px; height: 150px"></td>
+          <td
+            style="
+              width: 250px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <!-- creative idea  -->
+            <img
+              src="./FP IMG/icons8-idea-100.png"
+              alt="creative idea"
+              width="100px"
+              height="80px"
+            />
+            <h4>Creative Idea</h4>
+            <p style="display: inline; flex-wrap: wrap">
+              Lorem ipsum dolor sit elit. Molestiae, quae. Nulla totam corporis
+              quis, veritatis.
+            </p>
+          </td>
+          <td style="width: 50px; height: 150px"></td>
+          <td
+            style="
+              width: 250px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <!-- interior design  -->
+            <img
+              src="./FP IMG/icons8-home-100.png"
+              alt="home design"
+              width="100px"
+              height="80px"
+            />
+            <h4>Interior Design</h4>
+            <p style="display: inline; flex-wrap: wrap">
+              Lorem ipsum dolor sit elit. Molestiae, quae. Nulla totam corporis
+              quis, veritatis.
+            </p>
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+        </tr>
+        <!-- 3rd row  -->
+        <tr>
+          <td style="width: 150px; height: 150px"></td>
+          <td
+            style="
+              width: 250px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <img
+              src="./FP IMG/icons8-digital-service-100.png"
+              alt="digital Service"
+              width="100px"
+              height="80px"
+            />
+            <h4>Online Service</h4>
+            <p style="display: inline; flex-wrap: wrap">
+              Lorem ipsum dolor sit elit. Molestiae, quae. Nulla totam corporis
+              quis, veritatis.
+            </p>
+          </td>
+          <td style="width: 50px; height: 150px"></td>
+          <td
+            style="
+              width: 250px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <img
+              src="./FP IMG/icons8-group-support-80.png"
+              alt="group support"
+              width="100px"
+              height="80px"
+            />
+            <h4>Group Support</h4>
+            <p style="display: inline; flex-wrap: wrap">
+              Lorem ipsum dolor sit elit. Molestiae, quae. Nulla totam corporis
+              quis, veritatis.
+            </p>
+          </td>
+          <td style="width: 50px; height: 150px"></td>
+          <td
+            style="
+              width: 250px;
+              height: 50px;
+              text-align: center;
+              border: 2px solid black;
+            "
+          >
+            <img
+              src="./FP IMG/icons8-camera-100.png"
+              alt="camera"
+              width="100px"
+              height="80px"
+            />
+            <h4>Photography</h4>
+            <p style="display: inline; flex-wrap: wrap">
+              Lorem ipsum dolor sit elit. Molestiae, quae. Nulla totam corporis
+              quis, veritatis.
+            </p>
+          </td>
+          <td style="width: 150px; height: 150px"></td>
+        </tr>
+        <tr>
+          <td style="width: 50px; height: 50px"></td>
+        </tr>
+      </table>
+    </section>
+    <!-- contact us  -->
+    <main class="background-image">
+      <div class="form-container">
+        <table style="border: 1px solid black">
+          <tr>
+            <th colspan="3">Contact Us</th>
+            <!-- <th></th> -->
+            <!-- <th></th> -->
+          </tr>
+          <tr>
+            <td style="padding: 20px">
+              <label for="firstname">First Name</label>
+              <br />
+              <br />
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                maxlength="20"
+              />
+            </td>
+            <td style="width: 50px; height: 100px"></td>
+            <td style="padding: 20px">
+              <label for="lastname">Last Name</label>
+              <br />
+              <br />
+              <input type="text" id="lastname" name="lastname" maxlength="20" />
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 20px">
+              <label for="phone">Phone Number</label>
+              <br />
+              <br />
+              <input type="number" name="phone" id="phone" maxlength="20" />
+            </td>
+            <td style="width: 50px; height: 100px"></td>
+            <td style="padding: 20px">
+              <label for="date">Date</label>
+              <br />
+              <br />
+              <input type="date" name="date" id="date" />
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 20px" colspan="3">
+              <label for="message">Message</label>
+              <br />
+              <textarea id="message" name="message" row="100" cols="60">
+              </textarea>
+            </td>
+            <!-- <td>
+            </td>
+            <td></td> -->
+          </tr>
+          <tr>
+            <td style="padding: 20px">
+              <br /><input type="submit" value="Send" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <p>Website Created by Ly Seavsinh</p>
+    </footer>
+  </body>
+</html>
